@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,22 +15,47 @@
     <script src="/assets/js/app.js" type="module"></script>
     <script src="/assets/js/route.js" type="module"></script>
 </head>
+
 <body>
-    
+
     <header class="header">
         <div class="conatiner">
 
             <a href="#" class="logo">
                 <img src="./assets/images/logo.png" width="364" height="58" alt="logo">
             </a>
-            <div class="search-view" data-search-view="">
+            <div class="search-view" data-search-view>
 
-                <div class="search-view">
-                    <input type="search" name="seacrh" placeholder="seach city..." autocomplete="off" class="seacr field" data-search-field>
+                <div class="search-wrapper">
+                    <input type="search" name="seacrh" placeholder="seach city..." autocomplete="off"
+                        class="search field"
+                        data-search-field>
 
-                    
+                    <span class="m-icon">search</span>
                 </div>
 
+                <button class="icon-btn leading-icon has-state" aria-label="close
+                search" data-search-toggler>
+                    <span class="m-icon">arrow_back</span>
+                </button>
+
+            </div>
+
+            <div class="search-result" data-search-result>...
+            </div>
+
+            <div class="search-result" data-search-result>
+                <ul class="view-list" data-search-list>
+                    <li class="view-item">
+                        <span class="m-icon">location_on</span>
+                        <div>
+                            <p class="item-title">London</p>
+
+                            <p class="label-2 item-subtitle">State of london, GB</p>
+                        </div>
+                        <a href="#" class="item-link has-state" data-search-toggler></a>
+                    </li>
+                </ul>
             </div>
 
         </div>
@@ -37,4 +63,5 @@
     </header>
 
 </body>
+
 </html>
