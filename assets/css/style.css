@@ -61,11 +61,11 @@
   --shadow-2: 0px 3px 6px hsla(0, 0%, 0%, 0.4);
 
   --radius-28: 28px;
---radius-16: 16px;
---radius-pill: 500px;
---radius-circle: 50%;
+  --radius-16: 16px;
+  --radius-pill: 500px;
+  --radius-circle: 50%;
 
---transition-short: 100ms ease;
+  --transition-short: 100ms ease;
 
 }
 
@@ -74,10 +74,48 @@
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
+*,
+*::before *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+li { list-style: none;}
 
+a,
+img,
+span,
+input,
+button { display: block;}
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img { height: auto; }
+input,
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+}
+input { width: 100%;}
+button { cursor: pointer;}
+sub { vertical-align: baseline;}
+sup { vertical-align: top;}
+sub, sup { font-size: 0.75em;}
+html {
+  font-family: var(--ff-nunito-sans);
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
 
+body {
+  background-color: var(--background);
+  
+}
 
 /*-----------------------------------*\
   #MATERIAL ICON
