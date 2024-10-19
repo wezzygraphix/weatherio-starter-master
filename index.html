@@ -8,9 +8,9 @@
     <meta name="title" content="weatherio">
     <meta name="description" content="weatherio is a weather app made by codewithsadee">
     <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="/assets/js/app.js" type="module"></script>
     <script src="/assets/js/route.js" type="module"></script>
@@ -28,8 +28,7 @@
 
                 <div class="search-wrapper">
                     <input type="search" name="seacrh" placeholder="seach city..." autocomplete="off"
-                        class="search field"
-                        data-search-field>
+                        class="search field" data-search-field>
 
                     <span class="m-icon">search</span>
                 </div>
@@ -56,6 +55,20 @@
                         <a href="#" class="item-link has-state" data-search-toggler></a>
                     </li>
                 </ul>
+
+            </div>
+
+            <div class="header-actions">
+
+                <button class="icon-btn has-state" aria-label="open search" data-search-toggler>
+                    <span class="m-icon">search</span>
+                </button>
+                <a href="#/current-location" class="btn-primary has-state" data-current-location-btn>
+                    <span class="m-icon">My location</span>
+
+                    <span class="span">Current Location</span>
+                </a>
+
             </div>
 
         </div>
