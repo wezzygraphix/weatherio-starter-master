@@ -259,7 +259,17 @@ body {
   border-radius: var(--radius-pill);
 }
 
-.btn-primary
+.btn-primary .span { font-weight: var(--weight-semiBold);}
+
+.btn-primary[disabled] {
+  background-color: var(--outline);
+  color: var(--on-surface-variant);
+  cursor: not-allowed;
+}
+
+.btn-primary[disabled]::before { display: none;}
+
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
