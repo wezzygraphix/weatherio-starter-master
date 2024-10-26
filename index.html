@@ -24,48 +24,48 @@
             <a href="#" class="logo">
                 <img src="./assets/images/logo.png" width="364" height="58" alt="logo">
             </a>
-            <div class="search-view" data-search-view>
+
+            <div class="search-view active" data-search-view>
 
                 <div class="search-wrapper">
-                    <input type="search" name="seacrh" placeholder="seach city..." autocomplete="off"
-                        class="search field" data-search-field>
+                    <input type="search" name="search" placeholder="search city..." autocomplete="off"
+                        class="search-field" data-search-field>
+                        <span class="m-icon">search</span>
 
-                    <span class="m-icon">search</span>
+                        <button class="icon-btn leading-icon has-state" arial-label="closed search" data-search-toggler>
+                            <span class="m-icon">arrow_back</span>
+                        </button>
                 </div>
 
-                <button class="icon-btn leading-icon has-state" aria-label="close
-                search" data-search-toggler>
-                    <span class="m-icon">arrow_back</span>
-                </button>
+                <div class="search-result" data-search-result>
+                    <ul class="view-list" data-search-list>
 
-            </div>
+                        <li class="view-item">
+                            <span class="m-icon">location_on</span>
 
-            <div class="search-result" data-search-result>...
-            </div>
+                            <div>
+                                <p class="item-title">London</p>
 
-            <div class="search-result" data-search-result>
-                <ul class="view-list" data-search-list>
-                    <li class="view-item">
-                        <span class="m-icon">location_on</span>
-                        <div>
-                            <p class="item-title">London</p>
+                                <p class="label-2 item-subtitle">State of London</p>
+                            </div>
 
-                            <p class="label-2 item-subtitle">State of london, GB</p>
-                        </div>
-                        <a href="#" class="item-link has-state" data-search-toggler></a>
-                    </li>
-                </ul>
+                            <a href="#" class="item-link has-state" data-search-toggler></a>
+
+                        </li>
+
+                    </ul>
+                </div>
 
             </div>
 
             <div class="header-actions">
 
                 <button class="icon-btn has-state" aria-label="open search" data-search-toggler>
-                    <span class="m-icon">search</span>
+                    <span class="m-icon icon">search</span>
                 </button>
-
+                
                 <a href="#/current-location" class="btn-primary has-state" data-current-location-btn>
-                    <span class="m-icon">My_location</span>
+                    <span class="m-icon">my_location</span>
 
                     <span class="span">Current Location</span>
                 </a>
@@ -73,7 +73,6 @@
             </div>
 
         </div>
-
     </header>
 
 </body>
