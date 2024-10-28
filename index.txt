@@ -240,3 +240,5 @@ search-field {
 .search-view .view-item :is( .m-icon, ){
   
 }
+
+display: grid;
