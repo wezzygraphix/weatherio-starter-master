@@ -1,7 +1,7 @@
 
-# Project Title
+# Weather App
 
-A brief description of what this project does and who it's for
+This is a site that checks weather in the current city and displays it's information.
 
 ## Tech Stack
 
