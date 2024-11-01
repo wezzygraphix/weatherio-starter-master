@@ -1011,7 +1011,41 @@ article.container::before {
   .header .container {
     padding-block: 0;
     height: 100%;
-    
+  }
+
+  .search-view,
+  .search-view.active {
+    all: unset;
+    display: block;
+    position: relative;
+    width: 500px;
+    animation: none;
+  }
+
+  .search-wrapper { border-block-end: none;}
+
+  .search-wrapper > .m-icon { display: block;}
+
+  .search-field,
+  .search-view .view-list { background-color: var(--surface);}
+
+  .search-field {
+    height: 56px;
+    border-radius: var(--radius-28);
+  }
+
+  .search-result,
+  .search-view:not(:focus-within) .search-result {
+    display: none;
+  }
+
+  .search-view:focus-within .search-result.active { display: block;}
+
+  .search-view:has(.search-result.active)
+  :focus-within .search-field {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
   }
 
 }
