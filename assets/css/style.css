@@ -498,12 +498,12 @@ main {
   height: calc(100vh - 80px);
   height: calc(100svh - 80px);
   /*for mobile browser*/
-  overflow: scroll;
+  overflow: hidden;
 }
 article.container {
   position: relative;
   display: grid;
-  grid-template-columns:0, 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 20px;
   height: 100%;
   overflow-y: auto;
