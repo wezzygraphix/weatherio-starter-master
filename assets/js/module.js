@@ -1,8 +1,8 @@
 /**
  * @license MIT
  * @fileoverview All module functions
- * @copyright codewithsadee 2023 All rights reserved
- * @author codewithsadee <mohammadsadee24@gmail.com>
+ * @copyright wezzychibula 2024 All rights reserved
+ * @author wezzy chibula <chibulawezzy33@gmail.com>
  */
 'use strict';
 
@@ -89,6 +89,18 @@ export const aqiText = {
     },
     2: {
         level: "fair",
-        message: ""
+        message: "Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution"
+    },
+    3: {
+        level: "Moderate",
+        message: "Members of sensitive groups may experience health effects. The general public is not likely to be affected."
+    },
+    4: {
+        level: "Poor",
+        message: "Everyone may begin to experience health effects; members of sensitive groups may experience more serious health effect."
+    },
+    5: {
+        level: "Very Poor",
+        message: "health warnings of emergency conditions. The entire population is more likely to be affected."
     }
 }
