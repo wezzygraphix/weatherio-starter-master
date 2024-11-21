@@ -16,7 +16,7 @@ const api_key = "05a6515d1f1056de11359fa2d38b2479";
  */
 
 export const fetchData = function (URL, callback) {
-    fetch('${https://api.openweathermap.org/data/2.5/weather?${lat}&${lon}&units=metric}&appid=${05a6515d1f1056de11359fa2d38b2479}')
+    fetch('${URL}&appid=${api_key}')
         .then(res = res.json())
         .then(data = callback(data));
 }
