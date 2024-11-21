@@ -104,7 +104,7 @@ export const updateWeather = async (lat, lon) => {
       errorContent.style.display = "none";
   
       // Fetch weather data using API (replace with your API call)
-      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=YOUR_API_KEY`); // Replace with your API endpoint and key
+      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=05a6515d1f1056de11359fa2d38b2479`); // Replace with your API endpoint and key
       const weatherData = await response.json();
   
       // Update container content with weather information (adapt based on API response)
