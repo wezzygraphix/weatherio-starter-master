@@ -99,7 +99,7 @@ const errorContent = document.querySelector("[data-error-content]");
  */
 export const updateWeather = function (lat, lon) {
     loading.style.display = "grid";
-    container.style.overflowY = "visible";
+    container.style.overflowY = "hidden";
     container.classList.remove("fade-in");
     errorContent.style.display = "none";
 
