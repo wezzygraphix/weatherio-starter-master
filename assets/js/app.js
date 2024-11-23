@@ -1,7 +1,7 @@
 /**
  * @license MIT
- * @copyright wezzychibula 2024 All rights reserved
- * @author wezzy chibula <chibulawezzy33@gmail.com>
+ * @copyright watsonkayumba 2024 All rights reserved
+ * @author Watson Kayumba <watsonkayumba@gmail.com>
  */
 
 'use strict';
@@ -15,7 +15,7 @@ import * as module from "./module.js";
  * @param {string} eventType Event type e.g.: "click", "mouseover"
  * @param {Function} callback Callback function
  */
-const addEventOnElements = function (elements, eventType, callback) {
+const addEventOnElements = function(elements, eventType, callback) {
     for (const element of elements) element.addEventListener(eventType, callback);
 }
 
@@ -97,7 +97,6 @@ const errorContent = document.querySelector("[data-error-content]");
  * @param {number} lat Latitude
  * @param {number} lon Longitude
  */
-<<<<<<< HEAD
 export const updateWeather = function (lat, lon) {
     loading.style.display = "grid";
     container.style.overflowY = "hidden";
@@ -367,29 +366,5 @@ export const updateWeather = function (lat, lon) {
 
     });
 }
-=======
-const updateWeather = async (lat, lon) => {
-    try {
-        loading.style.display = "grid";
-        container.classList.remove("fade-in");
-        errorContent.style.display = "none";
-
-        // Fetch weather data using API (replace with your API call)
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?${lat}&${lon}&units=metric=05a6515d1f1056de11359fa2d38b2479`); // Replace with your API endpoint and key
-        const weatherData = await response.json();
-
-        // Update container content with weather information (adapt based on API response)
-        container.innerHTML = `<h1>${weatherData.name}</h1>
-                             <p>Temperature: ${weatherData.main.temp} K</p>`; // Modify based on data structure
-
-    } catch (error) {
-        console.error("Error fetching weather:", error);
-        errorContent.style.display = "block";
-        errorContent.textContent = "Failed to fetch weather data.";
-    } finally {
-        loading.style.display = "none"; // Hide loading indicator after success or failure
-    }
-};
->>>>>>> e55ab1d8ba8c1559481368778d3adc842ca2e4de
 
 export const error404 = () => errorContent.style.display = "flex";
