@@ -188,7 +188,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  background-image: url("/weather-app/assets/images/bg.jpg");
+  background-image: url("/assets/images/bg.jpg");
   background-size: cover;
   background-position: center;
   backdrop-filter: blur(10px);
