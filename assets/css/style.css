@@ -872,12 +872,13 @@ article.container::before {
 }
 
 .footer {
-  color: rgb(238, 238, 238);
+  color: rgb(170, 170, 170);
   text-align: center;
   gap: 12px 24px;
   margin-block-start: 28px;
   display: none;
-  /** background-color: #201f22; */
+  background-color: rgba(0, 9, 48, 0.63);
+  border-radius:15px;
 }
 
 .fade-in .footer {
